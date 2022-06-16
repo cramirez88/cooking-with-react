@@ -11,6 +11,12 @@ function App() {
         one: 'Put Salt On Chicken',
         two: 'Put Chicken in the oven',
         three: 'Eat Chicken'
+      },
+      ingredients: {
+        name: 'Chicken',
+        qty: '2 Pounds',
+        seasoning: 'Salt',
+        amount: '1 tbs'
       }
     },
     {
@@ -21,6 +27,12 @@ function App() {
         one: 'Put Paprika on Pork',
         two: 'Put pork in the oven',
         three: 'Eat Pork'
+      },
+      ingredients: {
+        name: 'Pork',
+        qty: '3 Pounds',
+        seasoning: 'Paprika',
+        amount: '2 tbs'
       }
     }
   ]
