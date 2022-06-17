@@ -19,7 +19,7 @@ export default function Recipe(props) {
       <li>{instructions.two}</li>
       <li>{instructions.three}</li>
       </ol>
-      <h2>Instructions</h2>
+      <h2>Ingredients</h2>
       <div className='footer'>
         <div className='footer-items'>
         <p>{ingredients.name}</p>
