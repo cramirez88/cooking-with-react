@@ -57,16 +57,21 @@ h2 {
   list-style-position: inside;
 }
 
-
 .footer {
+  display:flex;
+  flex-direction: column;
+}
+
+
+.footer-items {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
 
 
-.footer-items:nth-child(2) {
-  transform: translateX(-75%);
+.footer-items span:nth-child(2) {
+  transform: translateX(-80%);
 }
 
 
