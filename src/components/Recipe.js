@@ -14,10 +14,10 @@ export default function Recipe(props) {
         <p>Servings: {servings}</p>
       </div>
       <p>Instructions:</p>
-      <ol>
-      <li>{instructions.one}</li>
-      <li>{instructions.two}</li>
-      <li>{instructions.three}</li>
+      <ol className='list'>
+      <li className='list-item'>{instructions.one}</li>
+      <li className='list-item'>{instructions.two}</li>
+      <li className='list-item'>{instructions.three}</li>
       </ol>
       <h2>Ingredients</h2>
       <div className='footer'>
@@ -29,7 +29,6 @@ export default function Recipe(props) {
         <p>{ingredients.seasoning}</p>
         <span>{ingredients.amount}</span>
         </div>
-      
       </div>
     </div>
    
