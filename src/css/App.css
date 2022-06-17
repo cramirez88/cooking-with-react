@@ -1,0 +1,64 @@
+@import 'fonts.css';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.recipe {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 50%;
+  min-height: 100%;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  margin: 10px 0;
+}
+
+button {
+  margin-left: 15px;
+  border: none;
+  padding: .5em;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+}
+
+button:nth-of-type(1) {
+  background: aqua;
+}
+button:nth-of-type(2) {
+  background: red;
+}
+
+button:nth-of-type(1):hover {
+  background: rgb(24, 187, 187);
+}
+button:nth-of-type(2):hover {
+  background: rgb(208, 23, 23) ;
+}
+
+
+.body {
+  padding: 10px
+}
+
+.footer {
+  display:flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.footer-items {
+  display: flex;
+}
+
+.footer-items p {  
+  margin-right: 5px;
+}
+.footer-items span{  
+  margin-left: 5px;
+}
