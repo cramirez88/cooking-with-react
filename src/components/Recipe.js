@@ -13,7 +13,7 @@ export default function Recipe(props) {
         <p>Cook Time: {time}</p>
         <p>Servings: {servings}</p>
       </div>
-      <p>Instructions:</p>
+      <h2>Instructions:</h2>
       <ol className='list'>
       <li className='list-item'>{instructions.one}</li>
       <li className='list-item'>{instructions.two}</li>
