@@ -65,5 +65,8 @@ h2 {
 }
 
 
+.footer-items:nth-child(2) {
+  transform: translateX(-75%);
+}
 
 
