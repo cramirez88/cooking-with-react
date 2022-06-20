@@ -10,6 +10,7 @@ export default function RecipeList(props) {
           <Recipe key={index} {...recipe}></Recipe>
         ))
       }
+     <button className='add-recipe'>Add Recipe</button>
     </div>
   )
 }
