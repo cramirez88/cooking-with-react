@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import RecipeList from './components/RecipeList';
 import './css/App.css'
+import { v4 as uuidv4 } from 'uuid'
 
 function App() {
+  // state to add recipe
+
   const sampleRecipes = [
     {
       name: 'Chicken',
@@ -37,10 +40,32 @@ function App() {
       }
     }
   ]
+  const [recipe, setRecipe] = useState(sampleRecipes)
+
+  const handleAddRecipe = () => {
+    const newRecipe = {
+      id: uuidv4(),
+      name: 'New',
+      servings: 1,
+      time: '1:00',
+      instructions: {
+        one: 'First',
+        two: 'Second',
+        three: 'Three'
+      },
+      ingredients: {
+        name: 'New',
+        qty: 'X amount of Pounds',
+        seasoning: 'Pepper',
+        amount: 'X amount'
+      }
+    }
+    setRecipe([...recipe, newRecipe])
+  }
 
   return (
     <>
-      <RecipeList sampleRecipes={sampleRecipes} />
+      <RecipeList recipe={recipe} handleAddRecipe={handleAddRecipe} />
     </>
   )
   
