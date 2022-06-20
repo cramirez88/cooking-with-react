@@ -1,13 +1,13 @@
 import React from 'react'
 
 export default function Recipe(props) {
-  const {name, time, servings, instructions, ingredients}= props
+  const {name, time, servings, instructions, ingredients, handleDelete, id}= props
   return (
     <div className='recipe'>
       <div className='header'>
         <h2 className='title-font'>{name}</h2>
         <button>Edit</button>
-        <button>Delete</button>
+        <button onClick={() => handleDelete(id)}>Delete</button>
       </div>
       <div className='body body-font'>
         <p>Cook Time: {time}</p>

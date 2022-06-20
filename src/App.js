@@ -8,6 +8,7 @@ function App() {
 
   const sampleRecipes = [
     {
+      id: 1,
       name: 'Chicken',
       time: '1:45',
       servings: 3,
@@ -24,6 +25,7 @@ function App() {
       }
     },
     {
+      id: 2,
       name: 'Pork',
       time: '0:45',
       servings: 5,
@@ -63,9 +65,13 @@ function App() {
     setRecipe([...recipe, newRecipe])
   }
 
+  const handleDelete = (id) => {
+    setRecipe(recipe.filter(recipe => recipe.id !== id))
+  }
+
   return (
     <>
-      <RecipeList recipe={recipe} handleAddRecipe={handleAddRecipe} />
+      <RecipeList recipe={recipe} handleAddRecipe={handleAddRecipe} handleDelete={handleDelete} />
     </>
   )
   
