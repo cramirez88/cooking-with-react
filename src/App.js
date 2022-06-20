@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import RecipeList from './components/RecipeList';
 import './css/App.css'
 import { v4 as uuidv4 } from 'uuid'
+import RecipeEdit from './components/RecipeEdit';
 const LOCAL_STORAGE_KEY = 'cookingWithReact.recipes'
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
   return (
     <>
       <RecipeList recipe={recipe} handleAddRecipe={handleAddRecipe} handleDelete={handleDelete} />
+      <RecipeEdit/>
     </>
   )
   
