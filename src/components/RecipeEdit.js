@@ -28,11 +28,18 @@ export default function RecipeEdit() {
 
       <br/>
       <label>Ingredients</label>
-      <div>
+      <div className='ingredients-wrapper'>
+        <div className='name'>
         <div>Name</div>
         <div>Amount</div>
+        </div>
+        
+        <div className='edit-wrapper'>
         <RecipeIngredientsEdit/>
+        <br></br>
         <RecipeIngredientsEdit/>
+        </div>
+        
       </div>
       <button>Add Ingredient</button>
     </div>
